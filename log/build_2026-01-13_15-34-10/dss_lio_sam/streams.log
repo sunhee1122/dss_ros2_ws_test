@@ -1,0 +1,266 @@
+[0.227s] Invoking command in '/home/tukorea/ros2_ws/build/dss_lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam -DCMAKE_INSTALL_PREFIX=/home/tukorea/ros2_ws/install/dss_lio_sam
+[0.371s] -- The C compiler identification is GNU 11.4.0
+[0.776s] -- The CXX compiler identification is GNU 11.4.0
+[1.001s] -- Detecting C compiler ABI info
+[1.129s] -- Detecting C compiler ABI info - done
+[1.134s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.135s] -- Detecting C compile features
+[1.135s] -- Detecting C compile features - done
+[1.137s] -- Detecting CXX compiler ABI info
+[1.259s] -- Detecting CXX compiler ABI info - done
+[1.265s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.266s] -- Detecting CXX compile features
+[1.266s] -- Detecting CXX compile features - done
+[1.268s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.390s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.480s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.485s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.495s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.631s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.663s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[1.708s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.712s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.240s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.760s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.828s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.834s] -- Looking for pthread.h
+[4.937s] -- Looking for pthread.h - found
+[4.937s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.047s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.048s] -- Found Threads: TRUE  
+[5.081s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[5.081s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[5.112s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[5.124s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[5.137s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[5.166s] -- Checking for module 'eigen3'
+[5.175s] --   Found eigen3, version 3.4.0
+[5.195s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[5.195s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.567s] -- Checking for module 'flann'
+[6.590s] --   Found flann, version 1.9.1
+[7.191s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[7.191s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[12.603s] -- Checking for module 'libusb-1.0'
+[12.620s] --   Found libusb-1.0, version 1.0.25
+[12.716s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[12.718s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[12.908s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[14.662s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[14.669s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[14.676s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[16.067s] -- Found Qhull version 8.0.2
+[17.329s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[18.778s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[18.778s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[18.779s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[18.779s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[18.780s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[18.781s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[18.781s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[18.781s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[18.782s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[18.782s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[18.783s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[18.783s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[18.784s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[18.785s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[18.785s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[18.786s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[18.786s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[18.787s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[18.788s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[18.788s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[18.789s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[18.789s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[18.789s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[18.790s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[18.791s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[18.793s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[18.800s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[18.840s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[18.841s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[18.841s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[18.925s] -- Found tf2_sensor_msgs: 0.25.18 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[18.931s] -- Found tf2_eigen: 0.25.18 (/opt/ros/humble/share/tf2_eigen/cmake)
+[18.939s] -- Found OpenCV: /usr (found version "4.5.4") 
+[18.939s] CMake Warning (dev) at CMakeLists.txt:28 (find_package):
+[18.939s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[18.939s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[18.939s]   command to set the policy and suppress this warning.
+[18.939s] 
+[18.939s]   CMake variable PCL_ROOT is set to:
+[18.940s] 
+[18.940s]     /usr
+[18.940s] 
+[18.940s]   For compatibility, CMake is ignoring the variable.
+[18.940s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[18.940s] 
+[18.960s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.70") found components: serialization filesystem thread program_options date_time timer chrono regex 
+[18.962s] -- GTSAM include directory:  /usr/local/lib/cmake/GTSAM/../../../include
+[18.969s] -- Found Eigen: /usr/include/eigen3  
+[18.969s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[19.330s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[19.453s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[19.453s] -- Found OpenMP: TRUE (found version "4.5")  
+[19.677s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[19.905s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[20.188s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[20.312s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[20.314s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[20.697s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[20.697s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[20.697s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[20.697s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[20.714s] -- Found PythonExtra: .so  
+[20.918s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[20.950s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[20.951s] -- Configured cppcheck include dirs: /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam/include/dss_lio_sam
+[20.951s] -- Configured cppcheck exclude dirs and/or files: 
+[20.952s] -- Added test 'flake8' to check Python code syntax and style conventions
+[20.954s] -- Added test 'lint_cmake' to check CMake code style
+[20.954s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[20.957s] -- Added test 'uncrustify' to check C / C++ code style
+[20.958s] -- Configured uncrustify additional arguments: 
+[20.959s] -- Added test 'xmllint' to check XML markup files
+[20.964s] -- Configuring done
+[21.195s] -- Generating done
+[21.253s] -- Build files have been written to: /home/tukorea/ros2_ws/build/dss_lio_sam
+[21.277s] Invoked command in '/home/tukorea/ros2_ws/build/dss_lio_sam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam -DCMAKE_INSTALL_PREFIX=/home/tukorea/ros2_ws/install/dss_lio_sam
+[21.279s] Invoking command in '/home/tukorea/ros2_ws/build/dss_lio_sam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tukorea/ros2_ws/build/dss_lio_sam -- -j28 -l28
+[21.326s] [  2%] Generating C code for ROS interfaces
+[21.338s] [  4%] Generating C++ code for ROS interfaces
+[21.351s] [  4%] Built target ament_cmake_python_copy_dss_lio_sam
+[21.601s] running egg_info
+[21.602s] creating dss_lio_sam.egg-info
+[21.603s] writing dss_lio_sam.egg-info/PKG-INFO
+[21.603s] writing dependency_links to dss_lio_sam.egg-info/dependency_links.txt
+[21.603s] writing top-level names to dss_lio_sam.egg-info/top_level.txt
+[21.604s] writing manifest file 'dss_lio_sam.egg-info/SOURCES.txt'
+[21.605s] reading manifest file 'dss_lio_sam.egg-info/SOURCES.txt'
+[21.606s] writing manifest file 'dss_lio_sam.egg-info/SOURCES.txt'
+[21.638s] [  4%] Built target ament_cmake_python_build_dss_lio_sam_egg
+[21.763s] [  8%] Building C object CMakeFiles/dss_lio_sam__rosidl_generator_c.dir/rosidl_generator_c/dss_lio_sam/srv/detail/save_map__functions.c.o
+[21.763s] [  8%] Building C object CMakeFiles/dss_lio_sam__rosidl_generator_c.dir/rosidl_generator_c/dss_lio_sam/msg/detail/cloud_info__functions.c.o
+[21.764s] [  8%] Built target dss_lio_sam__cpp
+[21.778s] [ 12%] Generating C++ introspection for ROS interfaces
+[21.778s] [ 10%] Generating C++ type support for eProsima Fast-RTPS
+[21.778s] [ 14%] Generating C++ type support dispatch for ROS interfaces
+[21.901s] [ 17%] Linking C shared library libdss_lio_sam__rosidl_generator_c.so
+[22.030s] [ 17%] Built target dss_lio_sam__rosidl_generator_c
+[22.040s] [ 19%] Generating C type support for eProsima Fast-RTPS
+[22.041s] [ 21%] Generating C type support dispatch for ROS interfaces
+[22.043s] [ 23%] Generating C introspection for ROS interfaces
+[22.129s] [ 25%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dss_lio_sam/msg/cloud_info__type_support.cpp.o
+[22.130s] [ 27%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dss_lio_sam/srv/save_map__type_support.cpp.o
+[22.177s] [ 29%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dss_lio_sam/msg/detail/cloud_info__type_support.cpp.o
+[22.178s] [ 31%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dss_lio_sam/srv/detail/save_map__type_support.cpp.o
+[22.219s] [ 34%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dss_lio_sam/msg/detail/dds_fastrtps/cloud_info__type_support.cpp.o
+[22.220s] [ 36%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dss_lio_sam/srv/detail/dds_fastrtps/save_map__type_support.cpp.o
+[22.462s] [ 38%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_c.dir/rosidl_typesupport_c/dss_lio_sam/msg/cloud_info__type_support.cpp.o
+[22.463s] [ 40%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_c.dir/rosidl_typesupport_c/dss_lio_sam/srv/save_map__type_support.cpp.o
+[22.476s] [ 42%] Linking CXX shared library libdss_lio_sam__rosidl_typesupport_cpp.so
+[22.503s] [ 44%] Linking CXX shared library libdss_lio_sam__rosidl_typesupport_c.so
+[22.531s] [ 46%] Building C object CMakeFiles/dss_lio_sam__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dss_lio_sam/srv/detail/save_map__type_support.c.o
+[22.532s] [ 48%] Building C object CMakeFiles/dss_lio_sam__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dss_lio_sam/msg/detail/cloud_info__type_support.c.o
+[22.548s] [ 51%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dss_lio_sam/srv/detail/save_map__type_support_c.cpp.o
+[22.550s] [ 53%] Building CXX object CMakeFiles/dss_lio_sam__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dss_lio_sam/msg/detail/cloud_info__type_support_c.cpp.o
+[22.615s] [ 55%] Linking C shared library libdss_lio_sam__rosidl_typesupport_introspection_c.so
+[22.641s] [ 55%] Built target dss_lio_sam__rosidl_typesupport_cpp
+[22.662s] [ 55%] Built target dss_lio_sam__rosidl_typesupport_c
+[22.670s] [ 59%] Building CXX object CMakeFiles/dss_lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o
+[22.670s] [ 59%] Building CXX object CMakeFiles/dss_lio_sam_featureExtraction.dir/src/featureExtraction.cpp.o
+[22.671s] [ 61%] Building CXX object CMakeFiles/dss_lio_sam_mapOptimization.dir/src/mapOptmization.cpp.o
+[22.672s] [ 63%] Building CXX object CMakeFiles/dss_lio_sam_imageProjection.dir/src/imageProjection.cpp.o
+[22.781s] [ 63%] Built target dss_lio_sam__rosidl_typesupport_introspection_c
+[22.905s] [ 65%] Linking CXX shared library libdss_lio_sam__rosidl_typesupport_introspection_cpp.so
+[22.952s] [ 68%] Linking CXX shared library libdss_lio_sam__rosidl_typesupport_fastrtps_cpp.so
+[23.056s] [ 70%] Linking CXX shared library libdss_lio_sam__rosidl_typesupport_fastrtps_c.so
+[23.124s] [ 70%] Built target dss_lio_sam__rosidl_typesupport_introspection_cpp
+[23.159s] [ 70%] Built target dss_lio_sam__rosidl_typesupport_fastrtps_cpp
+[23.256s] [ 70%] Built target dss_lio_sam__rosidl_typesupport_fastrtps_c
+[23.279s] [ 70%] Built target dss_lio_sam
+[23.312s] [ 72%] Generating Python code for ROS interfaces
+[24.259s] [ 72%] Built target dss_lio_sam__py
+[24.291s] [ 74%] Building C object CMakeFiles/dss_lio_sam__rosidl_generator_py.dir/rosidl_generator_py/dss_lio_sam/msg/_cloud_info_s.c.o
+[24.291s] [ 76%] Building C object CMakeFiles/dss_lio_sam__rosidl_generator_py.dir/rosidl_generator_py/dss_lio_sam/srv/_save_map_s.c.o
+[24.655s] [ 78%] Linking C shared library rosidl_generator_py/dss_lio_sam/libdss_lio_sam__rosidl_generator_py.so
+[24.818s] [ 78%] Built target dss_lio_sam__rosidl_generator_py
+[24.850s] [ 82%] Building C object CMakeFiles/dss_lio_sam__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dss_lio_sam/_dss_lio_sam_s.ep.rosidl_typesupport_introspection_c.c.o
+[24.851s] [ 82%] Building C object CMakeFiles/dss_lio_sam__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dss_lio_sam/_dss_lio_sam_s.ep.rosidl_typesupport_c.c.o
+[24.851s] [ 85%] Building C object CMakeFiles/dss_lio_sam__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dss_lio_sam/_dss_lio_sam_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[25.053s] [ 87%] Linking C shared library rosidl_generator_py/dss_lio_sam/dss_lio_sam_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[25.057s] [ 89%] Linking C shared library rosidl_generator_py/dss_lio_sam/dss_lio_sam_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[25.061s] [ 91%] Linking C shared library rosidl_generator_py/dss_lio_sam/dss_lio_sam_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[25.210s] [ 91%] Built target dss_lio_sam__rosidl_typesupport_introspection_c__pyext
+[25.211s] [ 91%] Built target dss_lio_sam__rosidl_typesupport_fastrtps_c__pyext
+[25.234s] [ 91%] Built target dss_lio_sam__rosidl_typesupport_c__pyext
+[26.006s] In file included from /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam/src/imuPreintegration.cpp:17:
+[26.006s] /usr/local/include/gtsam_unstable/nonlinear/IncrementalFixedLagSmoother.h:17:2: warning: #warning "IncrementalFixedLagSmoother was moved to the gtsam/nonlinear directory" [-Wcpp]
+[26.006s]    17 | #warning "IncrementalFixedLagSmoother was moved to the gtsam/nonlinear directory"
+[26.006s]       |  ^~~~~~~
+[40.092s] /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam/src/imuPreintegration.cpp: In constructor ‘IMUPreintegration::IMUPreintegration(const rclcpp::NodeOptions&)’:
+[40.093s] /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam/src/imuPreintegration.cpp:248:100: error: conversion from ‘std::shared_ptr<gtsam::PreintegrationParams>’ to non-scalar type ‘boost::shared_ptr<gtsam::PreintegrationParams>’ requested
+[40.093s]   248 |         boost::shared_ptr<gtsam::PreintegrationParams> p = gtsam::PreintegrationParams::MakeSharedU(imuGravity);
+[40.094s]       |                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[40.097s] /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam/src/imuPreintegration.cpp:261:86: error: no matching function for call to ‘gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>::PreintegratedImuMeasurementsT(boost::shared_ptr<gtsam::PreintegrationParams>&, gtsam::imuBias::ConstantBias&)’
+[40.098s]   261 |         imuIntegratorImu_ = new gtsam::PreintegratedImuMeasurements(p, prior_imu_bias); // setting up the IMU integration for IMU message thread
+[40.098s]       |                                                                                      ^
+[40.098s] In file included from /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam/src/imuPreintegration.cpp:8:
+[40.098s] /usr/local/include/gtsam/navigation/ImuFactor.h:106:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT(const PreintegrationType&, const Matrix9&) [with PreintegrationType = gtsam::TangentPreintegration; gtsam::Matrix9 = Eigen::Matrix<double, 9, 9, 0, 9, 9>]’
+[40.098s]   106 |   PreintegratedImuMeasurementsT(const PreintegrationType& base, const Matrix9& preintMeasCov)
+[40.098s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[40.098s] /usr/local/include/gtsam/navigation/ImuFactor.h:106:59: note:   no known conversion for argument 1 from ‘boost::shared_ptr<gtsam::PreintegrationParams>’ to ‘const gtsam::TangentPreintegration&’
+[40.098s]   106 |   PreintegratedImuMeasurementsT(const PreintegrationType& base, const Matrix9& preintMeasCov)
+[40.098s]       |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+[40.098s] /usr/local/include/gtsam/navigation/ImuFactor.h:95:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT(const std::shared_ptr<gtsam::PreintegrationParams>&, const gtsam::imuBias::ConstantBias&) [with PreintegrationType = gtsam::TangentPreintegration]’
+[40.098s]    95 |   PreintegratedImuMeasurementsT(const std::shared_ptr<PreintegrationParams>& p,
+[40.098s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[40.098s] /usr/local/include/gtsam/navigation/ImuFactor.h:95:78: note:   no known conversion for argument 1 from ‘boost::shared_ptr<gtsam::PreintegrationParams>’ to ‘const std::shared_ptr<gtsam::PreintegrationParams>&’
+[40.098s]    95 |   PreintegratedImuMeasurementsT(const std::shared_ptr<PreintegrationParams>& p,
+[40.098s]       |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[40.098s] /usr/local/include/gtsam/navigation/ImuFactor.h:86:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT() [with PreintegrationType = gtsam::TangentPreintegration]’
+[40.098s]    86 |   PreintegratedImuMeasurementsT() {
+[40.098s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[40.098s] /usr/local/include/gtsam/navigation/ImuFactor.h:86:3: note:   candidate expects 0 arguments, 2 provided
+[40.098s] /usr/local/include/gtsam/navigation/ImuFactor.h:73:20: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>::PreintegratedImuMeasurementsT(const gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>&)’
+[40.098s]    73 | class GTSAM_EXPORT PreintegratedImuMeasurementsT: public PreintegrationType {
+[40.098s]       |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:73:20: note:   candidate expects 1 argument, 2 provided
+[40.099s] /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam/src/imuPreintegration.cpp:262:86: error: no matching function for call to ‘gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>::PreintegratedImuMeasurementsT(boost::shared_ptr<gtsam::PreintegrationParams>&, gtsam::imuBias::ConstantBias&)’
+[40.099s]   262 |         imuIntegratorOpt_ = new gtsam::PreintegratedImuMeasurements(p, prior_imu_bias); // setting up the IMU integration for optimization
+[40.099s]       |                                                                                      ^
+[40.099s] In file included from /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/dss_lio_sam/src/imuPreintegration.cpp:8:
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:106:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT(const PreintegrationType&, const Matrix9&) [with PreintegrationType = gtsam::TangentPreintegration; gtsam::Matrix9 = Eigen::Matrix<double, 9, 9, 0, 9, 9>]’
+[40.099s]   106 |   PreintegratedImuMeasurementsT(const PreintegrationType& base, const Matrix9& preintMeasCov)
+[40.099s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:106:59: note:   no known conversion for argument 1 from ‘boost::shared_ptr<gtsam::PreintegrationParams>’ to ‘const gtsam::TangentPreintegration&’
+[40.099s]   106 |   PreintegratedImuMeasurementsT(const PreintegrationType& base, const Matrix9& preintMeasCov)
+[40.099s]       |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:95:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT(const std::shared_ptr<gtsam::PreintegrationParams>&, const gtsam::imuBias::ConstantBias&) [with PreintegrationType = gtsam::TangentPreintegration]’
+[40.099s]    95 |   PreintegratedImuMeasurementsT(const std::shared_ptr<PreintegrationParams>& p,
+[40.099s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:95:78: note:   no known conversion for argument 1 from ‘boost::shared_ptr<gtsam::PreintegrationParams>’ to ‘const std::shared_ptr<gtsam::PreintegrationParams>&’
+[40.099s]    95 |   PreintegratedImuMeasurementsT(const std::shared_ptr<PreintegrationParams>& p,
+[40.099s]       |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:86:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT() [with PreintegrationType = gtsam::TangentPreintegration]’
+[40.099s]    86 |   PreintegratedImuMeasurementsT() {
+[40.099s]       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:86:3: note:   candidate expects 0 arguments, 2 provided
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:73:20: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>::PreintegratedImuMeasurementsT(const gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>&)’
+[40.099s]    73 | class GTSAM_EXPORT PreintegratedImuMeasurementsT: public PreintegrationType {
+[40.099s]       |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[40.099s] /usr/local/include/gtsam/navigation/ImuFactor.h:73:20: note:   candidate expects 1 argument, 2 provided
+[137.499s] c++: fatal error: Killed signal terminated program cc1plus
+[137.501s] compilation terminated.
+[137.511s] gmake[2]: *** [CMakeFiles/dss_lio_sam_imuPreintegration.dir/build.make:76: CMakeFiles/dss_lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o] Error 1
+[137.529s] gmake[1]: *** [CMakeFiles/Makefile2:653: CMakeFiles/dss_lio_sam_imuPreintegration.dir/all] Error 2
+[137.530s] gmake[1]: *** Waiting for unfinished jobs....
+[221.925s] [ 93%] Linking CXX executable dss_lio_sam_imageProjection
+[222.506s] [ 93%] Built target dss_lio_sam_imageProjection
+[223.796s] [ 95%] Linking CXX executable dss_lio_sam_featureExtraction
+[224.280s] [ 95%] Built target dss_lio_sam_featureExtraction
+[265.473s] [ 97%] Linking CXX executable dss_lio_sam_mapOptimization
+[266.023s] /usr/bin/ld: warning: libtbb.so.2, needed by /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d, may conflict with libtbb.so.12
+[266.199s] [ 97%] Built target dss_lio_sam_mapOptimization
+[266.208s] gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,77 @@
+CMake Warning (dev) at CMakeLists.txt:29 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+In file included from /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/lio_sam_ros2/src/imuPreintegration.cpp:17:
+/usr/local/include/gtsam_unstable/nonlinear/IncrementalFixedLagSmoother.h:17:2: warning: #warning "IncrementalFixedLagSmoother was moved to the gtsam/nonlinear directory" [-Wcpp]
+   17 | #warning "IncrementalFixedLagSmoother was moved to the gtsam/nonlinear directory"
+      |  ^~~~~~~
+/home/tukorea/ros2_ws/src/SLAM/LIO-SAM/lio_sam_ros2/src/imuPreintegration.cpp: In constructor ‘IMUPreintegration::IMUPreintegration(const rclcpp::NodeOptions&)’:
+/home/tukorea/ros2_ws/src/SLAM/LIO-SAM/lio_sam_ros2/src/imuPreintegration.cpp:248:100: error: conversion from ‘std::shared_ptr<gtsam::PreintegrationParams>’ to non-scalar type ‘boost::shared_ptr<gtsam::PreintegrationParams>’ requested
+  248 |         boost::shared_ptr<gtsam::PreintegrationParams> p = gtsam::PreintegrationParams::MakeSharedU(imuGravity);
+      |                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/tukorea/ros2_ws/src/SLAM/LIO-SAM/lio_sam_ros2/src/imuPreintegration.cpp:261:86: error: no matching function for call to ‘gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>::PreintegratedImuMeasurementsT(boost::shared_ptr<gtsam::PreintegrationParams>&, gtsam::imuBias::ConstantBias&)’
+  261 |         imuIntegratorImu_ = new gtsam::PreintegratedImuMeasurements(p, prior_imu_bias); // setting up the IMU integration for IMU message thread
+      |                                                                                      ^
+In file included from /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/lio_sam_ros2/src/imuPreintegration.cpp:8:
+/usr/local/include/gtsam/navigation/ImuFactor.h:106:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT(const PreintegrationType&, const Matrix9&) [with PreintegrationType = gtsam::TangentPreintegration; gtsam::Matrix9 = Eigen::Matrix<double, 9, 9, 0, 9, 9>]’
+  106 |   PreintegratedImuMeasurementsT(const PreintegrationType& base, const Matrix9& preintMeasCov)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:106:59: note:   no known conversion for argument 1 from ‘boost::shared_ptr<gtsam::PreintegrationParams>’ to ‘const gtsam::TangentPreintegration&’
+  106 |   PreintegratedImuMeasurementsT(const PreintegrationType& base, const Matrix9& preintMeasCov)
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:95:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT(const std::shared_ptr<gtsam::PreintegrationParams>&, const gtsam::imuBias::ConstantBias&) [with PreintegrationType = gtsam::TangentPreintegration]’
+   95 |   PreintegratedImuMeasurementsT(const std::shared_ptr<PreintegrationParams>& p,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:95:78: note:   no known conversion for argument 1 from ‘boost::shared_ptr<gtsam::PreintegrationParams>’ to ‘const std::shared_ptr<gtsam::PreintegrationParams>&’
+   95 |   PreintegratedImuMeasurementsT(const std::shared_ptr<PreintegrationParams>& p,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/gtsam/navigation/ImuFactor.h:86:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT() [with PreintegrationType = gtsam::TangentPreintegration]’
+   86 |   PreintegratedImuMeasurementsT() {
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:86:3: note:   candidate expects 0 arguments, 2 provided
+/usr/local/include/gtsam/navigation/ImuFactor.h:73:20: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>::PreintegratedImuMeasurementsT(const gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>&)’
+   73 | class GTSAM_EXPORT PreintegratedImuMeasurementsT: public PreintegrationType {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:73:20: note:   candidate expects 1 argument, 2 provided
+/home/tukorea/ros2_ws/src/SLAM/LIO-SAM/lio_sam_ros2/src/imuPreintegration.cpp:262:86: error: no matching function for call to ‘gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>::PreintegratedImuMeasurementsT(boost::shared_ptr<gtsam::PreintegrationParams>&, gtsam::imuBias::ConstantBias&)’
+  262 |         imuIntegratorOpt_ = new gtsam::PreintegratedImuMeasurements(p, prior_imu_bias); // setting up the IMU integration for optimization
+      |                                                                                      ^
+In file included from /home/tukorea/ros2_ws/src/SLAM/LIO-SAM/lio_sam_ros2/src/imuPreintegration.cpp:8:
+/usr/local/include/gtsam/navigation/ImuFactor.h:106:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT(const PreintegrationType&, const Matrix9&) [with PreintegrationType = gtsam::TangentPreintegration; gtsam::Matrix9 = Eigen::Matrix<double, 9, 9, 0, 9, 9>]’
+  106 |   PreintegratedImuMeasurementsT(const PreintegrationType& base, const Matrix9& preintMeasCov)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:106:59: note:   no known conversion for argument 1 from ‘boost::shared_ptr<gtsam::PreintegrationParams>’ to ‘const gtsam::TangentPreintegration&’
+  106 |   PreintegratedImuMeasurementsT(const PreintegrationType& base, const Matrix9& preintMeasCov)
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:95:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT(const std::shared_ptr<gtsam::PreintegrationParams>&, const gtsam::imuBias::ConstantBias&) [with PreintegrationType = gtsam::TangentPreintegration]’
+   95 |   PreintegratedImuMeasurementsT(const std::shared_ptr<PreintegrationParams>& p,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:95:78: note:   no known conversion for argument 1 from ‘boost::shared_ptr<gtsam::PreintegrationParams>’ to ‘const std::shared_ptr<gtsam::PreintegrationParams>&’
+   95 |   PreintegratedImuMeasurementsT(const std::shared_ptr<PreintegrationParams>& p,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/gtsam/navigation/ImuFactor.h:86:3: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<PreintegrationType>::PreintegratedImuMeasurementsT() [with PreintegrationType = gtsam::TangentPreintegration]’
+   86 |   PreintegratedImuMeasurementsT() {
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:86:3: note:   candidate expects 0 arguments, 2 provided
+/usr/local/include/gtsam/navigation/ImuFactor.h:73:20: note: candidate: ‘gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>::PreintegratedImuMeasurementsT(const gtsam::PreintegratedImuMeasurementsT<gtsam::TangentPreintegration>&)’
+   73 | class GTSAM_EXPORT PreintegratedImuMeasurementsT: public PreintegrationType {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/include/gtsam/navigation/ImuFactor.h:73:20: note:   candidate expects 1 argument, 2 provided
+c++: fatal error: Killed signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lio_sam_imageProjection.dir/build.make:76: CMakeFiles/lio_sam_imageProjection.dir/src/imageProjection.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:626: CMakeFiles/lio_sam_imageProjection.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/lio_sam_imuPreintegration.dir/build.make:76: CMakeFiles/lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:653: CMakeFiles/lio_sam_imuPreintegration.dir/all] Error 2
+/usr/bin/ld: warning: libtbb.so.2, needed by /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d, may conflict with libtbb.so.12
+gmake: *** [Makefile:146: all] Error 2
