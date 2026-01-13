@@ -1,0 +1,25 @@
+# Build and install directories
+build/
+install/
+log/
+
+# ROS bag files (large data)
+rosbag/
+*.db3
+*.yaml
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
